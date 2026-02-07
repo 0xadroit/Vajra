@@ -1,0 +1,88 @@
+{
+  "name": "vajra",
+  "version": "1.0.0",
+  "description": "Vajra - AI-Powered Autonomous Security Scanner & Penetration Testing Framework",
+  "main": "dist/index.js",
+  "bin": {
+    "vajra": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli/index.js",
+    "dev": "ts-node src/cli/index.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "security",
+    "penetration-testing",
+    "vulnerability-scanner",
+    "ai-security",
+    "autonomous-hacking",
+    "web-security",
+    "owasp",
+    "xss",
+    "sql-injection",
+    "security-automation"
+  ],
+  "author": "Vajra Security Team",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "openai": "^4.70.0",
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0",
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.0",
+    "inquirer": "^9.2.0",
+    "puppeteer": "^23.0.0",
+    "playwright": "^1.48.0",
+    "dotenv": "^16.4.0",
+    "winston": "^3.14.0",
+    "yaml": "^2.5.0",
+    "glob": "^11.0.0",
+    "semver": "^7.6.0",
+    "uuid": "^10.0.0",
+    "boxen": "^8.0.0",
+    "cli-table3": "^0.6.5",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2",
+    "node-fetch": "^3.3.0",
+    "form-data": "^4.0.0",
+    "tough-cookie": "^4.1.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/inquirer": "^9.0.0",
+    "@types/uuid": "^10.0.0",
+    "@types/figlet": "^1.5.0",
+    "@types/gradient-string": "^1.1.0",
+    "@types/tough-cookie": "^4.0.0",
+    "typescript": "^5.6.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.0",
+    "ts-jest": "^29.2.0",
+    "eslint": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "prettier": "^3.3.0",
+    "rimraf": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vajra-security/vajra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vajra-security/vajra/issues"
+  },
+  "homepage": "https://github.com/vajra-security/vajra#readme"
+}

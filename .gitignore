@@ -1,0 +1,89 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Reports (optional - uncomment to ignore)
+# vajra-reports/
+# reports/
+
+# Screenshots
+screenshots/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Cache
+.cache/
+.npm/
+.eslintcache
+.parcel-cache/
+
+# Playwright
+playwright-report/
+playwright/.cache/
+test-results/
+
+# Debug
+.debug/
+
+# Package manager locks (keep one, ignore others)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Secrets and credentials
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+
+# Scan results (sensitive data)
+*.sarif
+scan-results/
+
+# Docker
+.docker/
+
+# Misc
+*.bak
+*.backup

@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  vajra:
+    build: .
+    image: vajra:latest
+    container_name: vajra-scanner
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - NODE_ENV=production
+    volumes:
+      - ./reports:/app/reports
+      - ./configs:/app/configs:ro
+    networks:
+      - vajra-network
+    # Example: Run a scan
+    # command: scan https://example.com -o /app/reports
+
+  # Optional: Web UI for viewing reports
+  vajra-ui:
+    image: nginx:alpine
+    container_name: vajra-ui
+    ports:
+      - "8080:80"
+    volumes:
+      - ./reports:/usr/share/nginx/html:ro
+    networks:
+      - vajra-network
+    depends_on:
+      - vajra
+
+networks:
+  vajra-network:
+    driver: bridge
