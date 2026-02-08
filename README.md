@@ -25,7 +25,7 @@
 
 ## 🎯 What is Vajra?
 
-**Vajra** (Sanskrit: वज्र, meaning "thunderbolt" or "diamond") is an AI-powered autonomous security scanner that finds real vulnerabilities in your web applications. Unlike traditional scanners that generate endless false positives, Vajra uses advanced AI to intelligently analyze your application, craft context-aware payloads, and verify exploits.
+**Vajra** is an AI-powered autonomous security scanner that finds real vulnerabilities in your web applications. Unlike traditional scanners that generate endless false positives, Vajra uses advanced AI to intelligently analyze your application, craft context-aware payloads, and verify exploits.
 
 ### Why Vajra?
 
